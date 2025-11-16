@@ -14,6 +14,7 @@ func main() {
 
 	res2 := secondLargestOn([]int{10, 5, 10})
 	fmt.Println(res2)
+	
 }
 
 
@@ -42,8 +43,16 @@ func secondLargestOn(lst []int) int {
 			secondLargest = num 
 		} 
 	}
-		
+
+	if secondLargest != math.MinInt { 
+		return secondLargest
+	} else { 
+		return -1
+	}
+
+
+
+}	
 	
 
-	return secondLargest
-}
+	
